@@ -9,7 +9,7 @@
 
 ### Network Topology
 
-![Topology](images\Topology.png)
+![Topology](images/Topology.png)
 The following machines were identified on the network:
 - **Name of VM 1**: Capstone
   - **Operating System**: Linux
