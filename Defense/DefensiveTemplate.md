@@ -55,8 +55,7 @@ Alert 2 is implemented as follows:
   - **Metric**: packetbeat
   - **Threshold**: 3500 in last 1 minute
   - **Vulnerability Mitigated**: Port scanning
-  - **Reliability**: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
-    - second
+  - **Reliability**: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.  *Medium* 
 
 #### Name of Alert 3
 `CPU Usage Monitor`
@@ -70,15 +69,15 @@ Alert 3 is implemented as follows:
 
 
 ### Suggestions for Going Further (Optional)
-_TODO_: 
 - Each alert above pertains to a specific vulnerability/exploit. Recall that alerts only detect malicious behavior, but do not stop it. For each vulnerability/exploit identified by the alerts above, suggest a patch. E.g., implementing a blocklist is an effective tactic against brute-force attacks. It is not necessary to explain _how_ to implement each patch.
   
 The logs and alerts generated during the assessment suggest that this network is susceptible to several active threats, identified by the alerts above. In addition to watching for occurrences of such threats, the network should be hardened against them. The Blue Team suggests that IT implement the fixes below to protect the network:
 - Vulnerability 1: Weak Passwords
   - **Patch**: Implement a strong password policy with a forced expiration date,
-- Vulnerability 2: 
-  - **Patch**: TODO: E.g., _install `special-security-package` with `apt-get`_
-  - **Why It Works**: TODO: E.g., _`special-security-package` scans the system for viruses every day_
-- Vulnerability 3
-  - **Patch**: TODO: E.g., _install `special-security-package` with `apt-get`_
-  - **Why It Works**: TODO: E.g., _`special-security-package` scans the system for viruses every day_
+  - **Why It Works**: It is harder to guess strong passwords and also harder to crack passwords when they are constantly changing.
+- Vulnerability 2: weak hashes md5
+  - **Patch**: upgrade to sha256_
+  - **Why It Works**: it is a much more secure method
+- Vulnerability 3: sensitive data
+  - **Patch**: put sensitive data in files with stricter rules/privileges_
+  - **Why It Works**: files will be harder to find and harder to access if/when an attacker successfully penetrates the network.

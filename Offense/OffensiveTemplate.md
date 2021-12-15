@@ -6,7 +6,7 @@
 - Exploitation
 
 ### Exposed Services
-_TODO: Fill out the information below._
+Fill out the information below._
 
 Nmap scan results for each machine reveal the below services and OS details:
 
@@ -21,7 +21,7 @@ This scan identifies the services below as potential points of entry:
   - List of
   - Exposed Services
 
-_TODO: Fill out the list below. Include severity, and CVE numbers, if possible._
+Fill out the list below. Include severity, and CVE numbers, if possible._
 
 The following vulnerabilities were identified on each target:
 - Target 1
@@ -34,7 +34,7 @@ The following vulnerabilities were identified on each target:
 
  ![nmap-scan](images\nmap-scan.png)
 ### Exploitation
-_TODO: Fill out the details below. Include screenshots where possible._
+Fill out the details below. Include screenshots where possible._
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
 - Target 1
