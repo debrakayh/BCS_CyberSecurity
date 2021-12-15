@@ -32,26 +32,26 @@ The following vulnerabilities were identified on each target:
   - 445/tcp open microsoft-ds
 
 
- ![nmap-scan](images\nmap-scan.png)
+ ![nmap-scan](images/nmap-scan.png)
 ### Exploitation
 Fill out the details below. Include screenshots where possible._
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
 - Target 1
-  - `flag1.txt`: ![flag1](images\Flag1.png)
+  - `flag1.txt`: ![flag1](images/Flag1.png)
     - **Exploit Used**
         - Sensitive data found on the website page
         - http://192.168.1.110/services 
-  - `flag2.txt`: ![flag2](images\Flag2.png)
+  - `flag2.txt`: ![flag2](images/Flag2.png)
     - **Exploit Used**
       - wordpress enumerate
       - wpscan --url http://192.168.1.110/wordpress --enumerate u
-   - `flag3.txt`: ![flag3](images\Flag3.png)
+   - `flag3.txt`: ![flag3](images/Flag3.png)
     - **Exploit Used**
         - password guessing
         - ssh michael@192.168.1.110
         - guessed his password which was michael 
-  - `flag4.txt`: ![flag4](images\Flag4.png)
+  - `flag4.txt`: ![flag4](images/Flag4.png)
     - **Exploit Used**
       - Crack md5hash using John
       - then use python script to gain root access
